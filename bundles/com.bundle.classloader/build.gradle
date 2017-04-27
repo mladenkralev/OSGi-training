@@ -1,0 +1,9 @@
+dependencies {
+	compileOnly group: 'org.eclipse.core', name: 'org.eclipse.core.runtime', version: '3.7.0'
+}
+
+jar {
+    manifest {
+        instruction 'Bundle-Activator', 'com.tutorial.CustomClassLoader'
+    }
+}

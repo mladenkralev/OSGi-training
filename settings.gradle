@@ -3,6 +3,9 @@ File bundlesDir = new File(rootDir, 'bundles')
 include(':bundles:com-bundle-activator')
 project(':bundles:com-bundle-activator').projectDir = new File(bundlesDir, 'com.bundle.activator')
 
+include(':bundles:com-bundle-classloader')
+project(':bundles:com-bundle-classloader').projectDir = new File(bundlesDir, 'com.bundle.classloader')
+
 include 'tests'
 ProjectDescriptor testsProject = project(':tests')
 testsProject.projectDir = new File(rootDir, 'tests')
