@@ -1,6 +1,11 @@
 package com.helloworld;
 
-import org.osgi.framework.*;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleListener;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.FrameworkUtil;
+import org.osgi.framework.BundleEvent;
+import org.osgi.framework.Bundle;
 
 public class HelloWorldActivator implements BundleActivator, BundleListener {
 
