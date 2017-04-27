@@ -53,14 +53,3 @@ runOsgi {
 }
 
 
-
-task createClassLoadingDir (dependsOn:'build'){
-    doLast {
-        File classLoadingDir = new File(project.projectDir.toString() + '\\build\\classloading')
-        classLoadingDir.mkdirs();
-    }
-}
-
-tasks.runOsgi.dependsOn(createClassLoadingDir)
-
-
