@@ -3,6 +3,7 @@ apply plugin: 'com.athaydes.osgi-run'
 apply plugin: 'groovy'
 apply plugin: 'maven'
 
+
 buildscript {
     repositories {
         jcenter()
@@ -51,5 +52,15 @@ runOsgi {
     bundles += allBundlesFromProjects
 }
 
+
+
+task createClassLoadingDir (dependsOn:'build'){
+    doLast {
+        File classLoadingDir = new File(project.projectDir.toString() + '\\build\\classloading')
+        classLoadingDir.mkdirs();
+    }
+}
+
+tasks.runOsgi.dependsOn(createClassLoadingDir)
 
 
