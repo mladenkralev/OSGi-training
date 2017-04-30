@@ -4,6 +4,6 @@ dependencies {
 
 jar {
     manifest {
-        instruction 'Bundle-Activator', 'com.tutorial.CustomClassLoader'
+        instruction 'Bundle-Activator', 'com.tutorial.classloader.CustomClassLoader'
     }
 }
