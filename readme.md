@@ -1,14 +1,11 @@
-# Osgi Platform Training
+# Simple demo using thirdparty plugin. 
 
-Basic Osgi Platform
-
-## Getting Started
-
-This project has the idea to practice my osgi skills
+The purpose was to create:
+1. Create simple watchdog bundle
+2. Learn about bundle lifeCycle.
 
 ### Prerequisites
 
-1. Git
 2. Java
 
 ## Deployment
